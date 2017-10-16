@@ -15,6 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var whoTextField: UITextField!
     @IBOutlet weak var honbunTextField: UITextField!
+    @IBOutlet weak var backView: UIView!
     
     var resultText = ""
     
@@ -26,8 +27,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         honbunTextField.delegate = self
         
         let cherryBlossomView = AURCherryBlossomView(frame: self.view.bounds)
-        view.addSubview(cherryBlossomView)
-        cherryBlossomView.birthRate = 50
+        backView.addSubview(cherryBlossomView)
+        cherryBlossomView.birthRate = 4
         
         cherryBlossomView.type = .cherryBlossom
         cherryBlossomView.startBlossom()
