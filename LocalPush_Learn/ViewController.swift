@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import AURCherryBlossomView
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
@@ -23,6 +24,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         whoTextField.delegate = self
         honbunTextField.delegate = self
+        
+        let cherryBlossomView = AURCherryBlossomView(frame: self.view.bounds)
+        view.addSubview(cherryBlossomView)
+        cherryBlossomView.birthRate = 50
+        
+        cherryBlossomView.type = .cherryBlossom
+        cherryBlossomView.startBlossom()
     }
 
     override func didReceiveMemoryWarning() {
