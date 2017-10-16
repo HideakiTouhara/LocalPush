@@ -39,6 +39,9 @@
                                 <rect key="frame" x="123" y="400" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="push"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cKl-t4-M1b"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="human" translatesAutoresizingMaskIntoConstraints="NO" id="vwB-cm-DIr">
                                 <rect key="frame" x="32" y="57" width="100" height="100"/>
@@ -51,6 +54,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="honbunTextField" destination="YDq-wn-Gbb" id="h3j-nq-ouS"/>
+                        <outlet property="whoTextField" destination="RnB-SB-oEF" id="UTp-51-dlQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
